@@ -6,6 +6,18 @@
 
 '''
 
-строка = "Это тестовая <start>строка для изучения<end> строковых операций"
-user_text = input('Введите текст: ')
-print('Это тестовая <start>строка для изучения<end> строковых операций'.replace('строка для изучения', user_text))
+user_str = input('Введите фразу: ')
+
+if '<start>' and '<end>' in user_str:
+    print(user_str)
+elif '<start>' in user_str:
+    print('отсутствет тэг <end>')
+else:
+    print('должны присутствовать оба тэга: <start> и <end>')
+
+
+
+
+
+
+

@@ -8,6 +8,7 @@
 
 user_str = (input('Введите несколько цифр через пробел:'))
 print(user_str)
+
 text_list = list(map(int, user_str.split()))
 
 # сумма

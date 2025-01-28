@@ -7,7 +7,6 @@
 
 list_1 = ['hello', 'python', 'интерпретатор', 'pep8', "123"]
 
-
 el_0, el_1, el_2, el_3, el_4 = list_1[0], list_1[1], list_1[2], list_1[3], list_1[4]
 # print(list_1[0], list_1[1], list_1[2], list_1[3], list_1[4])
 # >>>> hello python интерпретатор pep8 123
