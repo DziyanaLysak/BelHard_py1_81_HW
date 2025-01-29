@@ -6,18 +6,12 @@
 
 '''
 
-user_str = input('Введите фразу: ')
+user_str = "Это тестовая <start>строка для изучения<end> строковых операций"
 
-if '<start>' and '<end>' in user_str:
-    print(user_str)
-elif '<start>' in user_str:
-    print('отсутствет тэг <end>')
-else:
-    print('должны присутствовать оба тэга: <start> и <end>')
+index_tag1 = user_str.find('<start>')
+tag1 = '<start>'
+index_tag2 = user_str.find('<end>')
 
-
-
-
-
+print(user_str[index_tag1+len(tag1):index_tag2])
 
 

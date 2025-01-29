@@ -7,12 +7,10 @@
 
 a = int(input("Введите чколичество секунд: "))
 
+hours = str(a // 3600)
+minutes = str(a // 60 % 60)
+seconds = str(a // 60 )
 
-ЧЧ = str(a // 3600)
-ММ = str(a // 60 % 60)
-СС = str(a // 60)
+print(hours, minutes, seconds, sep= ":")
+print(f'{int(hours):02}:{int(minutes):02}:{int(seconds):02}')
 
-
-print(ЧЧ, ММ, СС, sep= ":")
-print(f"{ЧЧ:02}:{ММ:02}:{СС:02}")
-print(f'{int(ЧЧ):02}:{int(ММ):02}:{int(СС):02}')

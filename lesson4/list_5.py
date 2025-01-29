@@ -5,7 +5,7 @@
 Добавить элемент на 2 место 'indesit'
 
 '''
-#1________________________________________
+#1
 list_1 = ['samsung', 'lg', 'xerox', 'bosch']
 
 list_1.remove('xerox')
@@ -17,11 +17,7 @@ print(list_1)
 # >>>> ['samsung', 'indesit', 'lg', 'bosch']
 
 
-#2_________________________________________
-print('--------------')
-
-list_1 = ['samsung', 'lg', 'xerox', 'bosch']
-
+#2
 list_1.pop(2)
 #print(list_1)
 # >>>> ['samsung', 'lg', 'bosch'] 
