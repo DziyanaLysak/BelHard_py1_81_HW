@@ -12,25 +12,16 @@ a3 = "hello"      # строка (str)
 a4 = 6.11         # дробное (float)
 
 
+fractional = all(isinstance(x, float) for x in [a1, a2, a3, a4])
 
-if type(a1) == float and type(a2) == float and type(a3) == float and type(a4) == float:
-    print("1) Все переменные дробные:", True)
-else:
-    print("1) Все переменные дробные:", False)
+string = any(isinstance(x, str) for x in [a1, a2, a3, a4])
 
 
 
-if type(a1) == str or type(a2) == str or type(a3) == str or type(a4) == str:
-    print("2) Хотя бы одна переменная строка:", True)
-else:
-    print("2) Хотя бы одна переменная строка:", False)
+integer_pair = (isinstance(a1, int) and isinstance(a3, int)) or \
+                          (isinstance(a2, int) and isinstance(a4, int)) or \
+                          (isinstance(a3, int) and isinstance(a4, int))
 
-
-if (
-    (type(a1) == int and type(a3) == int) or 
-    (type(a2) == int and type(a4) == int) or 
-    (type(a3) == int and type(a4) == int)
-    ):
-    print("3) Есть одна пара целочисленных переменных:", True)
-else:
-    print("3) Есть одна пара целочисленных переменных:", False)
+print(f"Все дробные: {fractional}")
+print(f"Есть строка: {string}")
+print(f"Есть целочисленная пара: {integer_pair}")

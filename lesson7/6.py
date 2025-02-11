@@ -16,7 +16,7 @@ while True:
     if name_user.lower() == "stop":
         break  
     
-    feedback = input("Введите ваш отзыв: ")
+    feedback = input("Введите Ваш отзыв: ")
     
     reviews[name_user] = feedback
 
