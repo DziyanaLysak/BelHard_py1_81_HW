@@ -6,7 +6,6 @@
 
 '''
 
-
 def count_char(text):
 
   symbolS = {}  

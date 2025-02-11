@@ -8,12 +8,13 @@
 
 
 """
+
 def short_format(full_name, surname_1=True):
 
   split_name = full_name.split()
 
   if len(split_name) < 3:
-    return "Ошибка: Введите полное имя (Фамилия Имя Отчество)."
+    return "Введите полное имя (Фамилия Имя Отчество)."
 
   surname = split_name[0]
   name = split_name[1]
