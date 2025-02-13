@@ -8,10 +8,18 @@ Yes - если число уже встречалось и No, если нет
 
 """
 
+'''
+Функция yes_or_no:
+Принимает список целых чисел и возвращает список 'Yes' или 'No'.
+'Yes' или 'No' указывают, встречалось ли число ранее в списке. 
+ 
+numbers: Список чисел.
+
+'''
 def yes_or_no(numbers):
     
     for num in numbers:
-        if isinstance(num, int) == False:  
+        if isinstance(num, int) != True:  
             return False
 
     seen = set()
@@ -26,3 +34,5 @@ def yes_or_no(numbers):
 
     return result
 
+print(yes_or_no([1, 1, 2, 3, 4]))  # Вывод: ['No', 'Yes', 'No', 'No', 'No']
+print(yes_or_no([1, 2, 3, 1, "l"])) # Вывод: False

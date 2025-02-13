@@ -6,7 +6,14 @@
 
 '''
 
-def count_char(text):
+"""
+Функция count_char:
+Подсчитывает количество вхождений каждой буквы в строку и возвращает словарь.
+ 
+text: Строка, в которой нужно подсчитать буквы.
+  
+"""
+def count_char(text: str):
 
   symbolS = {}  
 
@@ -17,5 +24,9 @@ def count_char(text):
       symbolS[symbol] = 1  
 
   return symbolS  
+
+print(count_char("aaaabbbccd"))
+ # Вывод: {'a': 4, 'b': 3, 'c': 2, 'd': 1}
+
 
 
