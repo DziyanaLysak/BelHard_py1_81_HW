@@ -13,10 +13,10 @@
 """
 Функция monetary: Преобразует число в денежный формат: разделители пробелами, копейки, "руб.".
     
-number: Число (int или float).
+number: Число
 
 """
-def monetary(number):
+def monetary(number:int,float):
     
     try:
     
