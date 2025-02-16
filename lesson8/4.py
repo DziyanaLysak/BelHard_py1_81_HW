@@ -16,7 +16,7 @@
 number: Число
 
 """
-def monetary(number:int,float):
+def monetary(number):
     
     try:
     
@@ -32,7 +32,8 @@ def monetary(number:int,float):
         categories = str(integer_part)[::-1]  
         for i, digit in enumerate(categories):
             integer_part_formatted += digit
-            if (i + 1) % 3 == 0 and i != len(categories) - 1:  
+            position = i + 1
+            if position % 3 == 0 and i != len(categories) - 1:  
                 integer_part_formatted += " "
 
         integer_part_formatted = integer_part_formatted[::-1] 
