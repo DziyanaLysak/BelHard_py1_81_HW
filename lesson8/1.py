@@ -8,14 +8,6 @@
 
 """
 
-'''
-Функция short_format: Принимает ФИО одной строкой и возвращает сокращенную версию.
-
-full_name: ФИО (например, "Петров Владимир Сергеевич").
-first_surname=True (по умолчанию): возвращает ФИО в формате "Фамилия И.О.".
-first_surname=False: возвращает ФИО в формате "И.О. Фамилия".
-
-'''
 def short_format(full_name: str , first_surname=True):
 
   split_name = full_name.split()

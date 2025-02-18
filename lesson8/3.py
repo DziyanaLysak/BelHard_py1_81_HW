@@ -3,12 +3,6 @@
 
 '''
 
-"""
-Функция calculate_factorial: Вычисляет факториал числа n (n!).
-
-n: Целое число, факториал которого нужно вычислить.
-
-"""
 def calculate_factorial(n):
   
   if not isinstance(n, int):
