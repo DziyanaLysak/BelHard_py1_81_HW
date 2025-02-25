@@ -20,7 +20,6 @@
 """
 class Phone:
     
-
     def __init__(self, brand, model, issue_year):
         print("__init__")
         self.brand = brand
