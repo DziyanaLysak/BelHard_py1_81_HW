@@ -32,3 +32,4 @@ print(next(tn_gen))  # Вывод: 6
 print(next(tn_gen))  # Вывод: 10
 print(next(tn_gen))  # Вывод: 15
 print(next(tn_gen))  # Вывод: 21
+print(next(tn_gen))

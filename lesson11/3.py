@@ -81,7 +81,7 @@ def chicken():
 def beef():
     print("### говядина ###")
 
-print(beef())
+beef()
 
 @bread
 @cheese
@@ -89,6 +89,6 @@ print(beef())
 def chicken():
     print("|||| курица ||||")
 
-print(chicken())
+chicken()
 
 

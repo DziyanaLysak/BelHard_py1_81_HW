@@ -13,8 +13,8 @@ def decorator_errors(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            print(f"Ошибка: {e} в функции {func.__name__}")
-            return None
+            return print(f"Ошибка: {e} в функции {func.__name__}")
+            
           
     return wrapper
 
@@ -31,3 +31,5 @@ def calculate2(x):
 print(calculate2(5))       # Вывод: 25
 print(calculate2("25"))    # Вывод: can't multiply sequence by non-int of type 'str' в функции calculate2
                            #        None
+
+
