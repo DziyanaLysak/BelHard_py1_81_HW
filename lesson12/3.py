@@ -15,8 +15,6 @@
     - increase(num=1), увеличивает счетчик на заданную величину или 1 по умолчанию
     - decrease(num=1), уменьшает счетчик на заданную величину или 1 по умолчанию
     - reset, сбрасывает значение счетчика на стартовое   
-
-    _______________________________________ 
     - метод __iter__
     - метод __next__
     
@@ -38,17 +36,32 @@ class Counter:
 
     def reset(self):    # сбрасывает значение счетчика на стартовое
         self.value = self.start_value 
-        
+            
+    def __iter__(self):
+        self.current = self.start_value # Начинаем с начального значения
+        return self 
+
+    def __next__(self):
+        if self.current <= self.value: 
+            result = self.current 
+            self.current = self.current + 1 
+            return result 
+        else: 
+            raise StopIteration 
+
     
-counter1 = Counter(start=100)  
+counter1 = Counter(start=3)  
 print(f"Начальное значение счетчика: {counter1.value}")  
 
-counter1.increase(25)  
+counter1.increase(5)  
 print(f"Счетчик увеличился: {counter1.value}")  
 
-counter1.decrease(70)  
+counter1.decrease(1)  
 print(f"Счетчик уменьшился: {counter1.value}")  
 
-counter1.reset() 
-print(f"Сброс счетчика: {counter1.value}")  
+print("Итерация по счетчику:")
+for i in counter1:
+    print(i)
 
+counter1.reset() 
+print(f"Сброс счетчика: {counter1.value}") 

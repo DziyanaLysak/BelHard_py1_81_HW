@@ -21,7 +21,6 @@
 class Phone:
     
     def __init__(self, brand, model, issue_year):
-        print("__init__")
         self.brand = brand
         self.model = model
         self.issue_year = issue_year
@@ -32,11 +31,12 @@ class Phone:
     def get_info(self):
         return (self.brand, self.model, self.issue_year)
     
-    def __str__(self):
+    def __str__(self): 
         print("__str__")
-        return f"""Бренд: {self.brand}
-Модель: {self.model}
-Год выпуска: {self.issue_year}"""
+        return f"Бренд: {self.brand}\n" +\
+               f"Модель: {self.model}\n" +\
+               f"Год выпуска: {self.issue_year}"
+        
     
 ph1 = Phone("Samsung", "Galaxy S25", 2022)
 
